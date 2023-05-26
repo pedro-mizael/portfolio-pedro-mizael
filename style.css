@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Khula&display=swap');
+
+*{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	scrollbar-width: thin;
+	scrollbar-color: #1E392A lightgray;
+	cursor: default;
+}
+
+* ::-webkit-scrollbar {
+	width: 5px;
+}
+
+* ::-webkit-scrollbar-track{
+	background: lightgray;
+}
+
+* ::-webkit-scrollbar-thumb {
+	border-radius: 12px;
+	background-color: #1E392A;
+	border: 0px;
+}
+
+body{
+	display: grid;
+	grid-template-columns: repeat(15, 1fr);
+	grid-template-rows: repeat(15, 1fr);
+	box-sizing: border-box;
+}
+
+.principal{
+	display: grid;
+	color: white;
+	background-color: #245E31;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	grid-column: 1/10;
+	grid-row: 1/16;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+.principal img{
+	width: 306px;
+	height: auto;
+	border-radius: 50%;
+	padding: 20px;
+}
+
+.sobre{
+	display: flex;
+	cursor: default;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	grid-row: 1/16;
+	grid-column: 10/16;
+	box-shadow: 8px 0px 10px 0px #00000040 inset;
+	font-family: 'Khula', sans-serif;
+
+}
+
+.sobre h1{
+	margin: 15px;
+}
+
+.links{
+	display: flex;
+	margin: 15px;
+}
+
+.links img{
+	width: 32px;
+	margin: 15px;
+	transition: all ease 0.5s;
+}
+
+.links img:hover{
+	width: 46px;
+	margin: 1px 15px;
+	cursor: pointer;
+}
+
+.texto{
+	overflow: auto;
+	width: 75%;
+}
+
+@media only screen and (max-device-width: 670px) {
+
+	*{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	cursor: default;
+	}
+
+	* ::-webkit-scrollbar {
+		width: 0px;
+		height: 0px;
+	}
+
+	* ::-webkit-scrollbar-track{
+		background: lightgray;
+	}
+
+	* ::-webkit-scrollbar-thumb {
+		border-radius: 0px;
+		background-color: #1E392A;
+		border: 0px;
+	}
+
+	body{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	}
+
+	.principal{
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		background-color: #245E31;
+		grid-column: 1;
+		grid-row: 1;
+		font-family: 'Julius Sans One', sans-serif;
+	}
+
+	.principal img{
+		width: 80px;
+		height: auto;
+		border-radius: 50%;
+		padding: 0px;
+		margin: 10px 15px;
+	}
+
+	.sobre{
+		display: flex;
+		cursor: default;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		grid-column: 1;
+		grid-row: 2;
+		box-shadow: 0px 8px 10px -5px #00000040 inset;
+		font-family: 'Khula', sans-serif;
+	}
+
+	.sobre h1{
+		width: 80%;
+	}
+	
+	.texto{
+		overflow: auto;
+		width: 80%;
+	}
+
+	.links{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		bottom: 0px;
+		margin: 0px;
+		background-color: #245E31;
+		background-color: white;
+	}
+
+	.links img{
+		width: 32px;
+		margin: 15px;
+		transition: all ease 0.5s;
+	}
+
+	.links img:hover{
+		width: 46px;
+		margin: 1px 15px;
+		cursor: pointer;
+	}
+
+
+}
