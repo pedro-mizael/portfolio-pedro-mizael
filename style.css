@@ -11,11 +11,11 @@
 }
 
 * ::-webkit-scrollbar {
-	width: 5px;
+	width: 3px;
 }
 
 * ::-webkit-scrollbar-track{
-	background: lightgray;
+	background: none;
 }
 
 * ::-webkit-scrollbar-thumb {
@@ -54,7 +54,7 @@ body{
 	display: flex;
 	cursor: default;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	grid-row: 1/16;
 	grid-column: 10/16;
@@ -63,8 +63,32 @@ body{
 
 }
 
-.sobre h1{
-	margin: 15px;
+.sobre h2{
+	place-self: flex-start;
+	margin: 5% 0px 15px 10%;
+}
+
+.button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+	width: 100%;
+}
+
+.button a{
+	padding: 10px 100px;
+	margin: 10px 0px;
+	width: 80%;
+	text-decoration: none;
+	color: white;
+	background-color: #245E31;
+}
+
+.button a:hover{
+	cursor: pointer;
+	opacity: 95%;
 }
 
 .links{
@@ -86,7 +110,7 @@ body{
 
 .texto{
 	overflow: auto;
-	width: 75%;
+	width: 80%;
 }
 
 @media only screen and (max-device-width: 670px) {
@@ -100,7 +124,7 @@ body{
 	}
 
 	* ::-webkit-scrollbar {
-		width: 0px;
+		width: 2px;
 		height: 0px;
 	}
 
@@ -138,24 +162,29 @@ body{
 		margin: 10px 15px;
 	}
 
+	.principal h1{
+		font-size: 150%;
+	}
+
 	.sobre{
 		display: flex;
 		cursor: default;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 		grid-column: 1;
 		grid-row: 2;
 		box-shadow: 0px 8px 10px -5px #00000040 inset;
 		font-family: 'Khula', sans-serif;
+		height: 100%;
 	}
 
-	.sobre h1{
+	.sobre h2{
 		width: 80%;
+		font-size: 120%;
 	}
 	
 	.texto{
-		overflow: auto;
 		width: 80%;
 	}
 
@@ -181,5 +210,9 @@ body{
 		cursor: pointer;
 	}
 
+	.button a{
+		width: 100%;
+		margin-bottom: 0;
+	}
 
 }
