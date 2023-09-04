@@ -4,26 +4,43 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pedro Mizael</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style-2.css">
+	<script type="text/javascript" src="script.js"></script>
 </head>
-<body>
+<body onload="focus()" onhashchange="focus()">
 
 	<div class="principal">
-		<img src="Perfil.jpg">
-		<h1>PEDRO MIZAEL</h1>
+		<nav>
+			<div class="menu-sobre" id="menu-sobre" onclick="show(sobre)">
+				<img src="Perfil.jpg">
+				<p> PEDRO MIZAEL</p>
+			</div>
+			<div class="menu-servicos" id="menu-servicos" onclick="show(servicos)">
+				<p>Serviços</p>
+			</div>
+			<div class="menu-projetos" id="menu-projetos" onclick="show(projetos)">
+				<p>Projetos</p>
+			</div>
+			<div class="menu-redes" id="menu-redes" onclick="show(redes)">
+				<p>Redes</p>
+			</div>
+		</nav>
+		<a class="email" href="mailto:saabmizael.t@gmail.com">Contato: saabmizael.t@gmail.com</a>
 	</div>
 
-	<div class="sobre">
+
+
+	<div class="sobre pedro" id="sobre">
 		<h2>DESENVOLVEDOR FRONT-END</h2>
 		<div class="texto">
 			<p>
-				Olá! Sou Formado em Análise e Desenvolvimento de Sistemas (2022), pelo Centro Universitário Leonardo da Vinci, onde desenvolvi trabalhos acadêmicos sobre Banco de Dados Relacional, Implementação de Aplicações Web e Business Intelligence.
+				Prazer em vê-lo aqui! Meu nome é Pedro Mizael, sou Formado em Análise e Desenvolvimento de Sistemas (2022), pelo Centro Universitário Leonardo da Vinci, onde desenvolvi trabalhos acadêmicos sobre Banco de Dados Relacional, Implementação de Aplicações Web e Business Intelligence.<br> <br>
 			</p>
 			<p>
-				Obtive meu primeiro certificado de Desenvolvedor de Jogos e Aplicativos no ano de 2017, pela Prepara cursos, onde meu interesse pela área de desenvolvimento de softwares surgiu.
+				Obtive meu primeiro certificado de Desenvolvedor de Jogos e Aplicativos no ano de 2017, pela Prepara cursos, onde meu interesse pela área de desenvolvimento de softwares surgiu.<br> <br>
 			</p>
 			<p>
-				Minha primeira imersão na área de tecnologia foi no ensino médio, com o curso de Manutenção e Suporte em Informática, iniciado em 2016 e concluído em 2018.
+				Minha primeira imersão na área de tecnologia foi no ensino médio, com o curso de Manutenção e Suporte em Informática, iniciado em 2016 e concluído em 2018.<br> <br>
 			</p>
 			<p>
 				Desenvolvo landing pages para seu negócio ou portfólio, para entrar em contato, ou conhecer mais sobre o meu trabalho, segue abaixo os links para meu email e redes sociais.
@@ -35,8 +52,45 @@
 			<a href="https://github.com/pedro-mizael"><img src="icons/github.svg"></a>
 			<a href="https://instagram.com/pedromizael.web?igshid=MzNlNGNkZWQ4Mg=="><img src="icons/instagram.svg"></a>
 		</div>
+	</div>
+
+
+	<div class="sobre servicos" id="servicos">
+		<div class="lista-servicos">
+			<div>
+				<p>Desenvolvimento de Landing Pages</p>
+			</div>
+
+			<div>
+				<p>Iniciação ao Desenvolivmento Web</p>
+			</div>
+
+			<div>
+				<p>Normalização de Banco de Dados</p>
+			</div>
+
+			<div>
+				<p>Assistência Técnica</p>
+			</div>
+		</div>
+		<p>Contato via <a href="mailto:saabmizael.t@gmail.com">Email</a> ou <a href="https://instagram.com/pedromizael.web?igshid=MzNlNGNkZWQ4Mg==">Instagram</a></p>
+	</div>
+
+	<div class=" sobre projetos" id="projetos">
 		<div class="button">
-			<a href="https://pedro-mizael.github.io/lembrou-web/">Lembrou Web</a>
+			<a href="https://www.ondetem-cg.com" target="_blank">Onde Tem - Campo Grande</a>
+		</div>
+		<div class="button">
+			<a href="https://pedro-mizael.github.io/lembrou-web/" target="_blank">Lembrou Web</a>
+		</div>
+	</div>
+
+	<div class="sobre redes" id="redes">
+		<div class="links">
+		<a href="https://www.linkedin.com/in/pedro-mizael-de-s%C3%A1-saab-53a892171" target="_blank"><img src="icons/linkedin.svg"></a>
+		<a href="https://github.com/pedro-mizael" target="_blank"><img src="icons/github.svg"></a>
+		<a href="https://instagram.com/pedromizael.web?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><img src="icons/instagram.svg"></a>
+			
 		</div>
 	</div>
 
