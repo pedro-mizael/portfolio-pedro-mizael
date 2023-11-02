@@ -157,6 +157,7 @@ h2{
 	width: 45%;
 	text-align: center;
 	border: solid 2px #9932CC;
+	border: solid 2px #3A7540;
 
 }
 
@@ -178,13 +179,13 @@ h2{
 	gap: 10px 2%;
 	width: 100%;
 	border: solid 2px #DAA520;
+	border: solid 2px #3A7540;
 	border-radius: 5px;
 	overflow: auto;
 	width: 45%;
 	padding: 20px;
-	text-decoration-color: #4287F5;
+	text-decoration: none;
 	text-align: center;
-	color: #4287F5;
 }
 .button:hover{
 	cursor: pointer;
