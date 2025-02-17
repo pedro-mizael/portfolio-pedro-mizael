@@ -3,7 +3,7 @@
 <p> Esta página busca descrever meu resumo acadêmico e profissional.</p>
 <p> Nesta página está descrita minha escolaridade, meus projetos e redes sociais.</p>
 <p> O site foi desenvolvido para aparelhos mobile e desktop.</p>
-<p>Vizualização disponível em: <a href="https://pedro-mizael.github.io/portfolio-pedro-mizael/#sobre">Site</a></p>
+<p>Vizualização disponível em: <a href="https://pedro-mizael.github.io/portfolio-pedro-mizael/#sobre" target="blank">Site</a></p>
 <h4> Menus de navegação </h4>
 <ul>
   <li> Sobre </li>
